@@ -26,7 +26,7 @@ var deviceType = getPAGE();
 
 var danmuData = [
     {
-        "barrageId": 1,
+        "danmuId": 1,
         "content" : " 系统发送：第一条弹幕",
         "color": "white",
         "speed" : 16,
@@ -50,9 +50,48 @@ var danmuData = [
             console.log("拉取结果",result);
             return;
         }
-    })
+
+        sendDamu(danmuData[0]["danmuId"],
+                danmuData[0]["content"],
+                danmuData[0]["color"],
+                danmuData[0]["speed"],
+                danmuData[0]["textSize"],
+                danmuData[0]["road"]);
+        danmuData.splice(0,1);
+         
+    },1000);
+
 })();
 
+
+function sendDamu(danmuId,content,color,speed,textSize,road){
+    console.log("发送弹幕");
+
+    var newDanmu = document.createElement("span");
+    var newDanmuInfo = document.createElement("div"); 
+
+    if(content === ""){
+        return;
+    }
+    newDanmu.classList.add("barrage-info-area");
+    newDanmu.style.transitionDuration = speed + "s";
+    newDanmu.style.webkitTransitionDuration = speed + "s";
+    //添加头像
+    newDanmu.innerHTML("<img src=\"pic/headImg.jpg\" rel=\"icon\" class=\"barrage-head-img\" alt=\"\" />");
+
+
+    newDanmuInfo.style.setProperty("color",color);
+    newDanmuInfo.style.setProperty("font-size",textSize+"px");
+    newDanmuInfo.innerHTML = content;
+
+    newDanmu.appendChild(newDanmuInfo);
+    newDanmu.onmouseenter = function(ev){
+        onMouseIn(this);
+    }
+    newDanmu.onmouseleave = function(ev){
+        onmouseLeave(this);
+    }
+}
 
 
 function whichTransitionEvent(){
