@@ -1,0 +1,209 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: linear-gradient(-190deg, #4183d7 65%, #00b5cc);
+}
+
+.barrage-box {
+    position: absolute;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 100px;
+    margin-top: calc(4.6vh);
+    width: 1000px;
+    height: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: azure;
+    
+}
+
+
+
+.barrage-content {
+    background-color: rgba(146, 251, 47, 0.11);
+    margin-top: 0;
+    width: 100%;
+    height: 90%;
+    
+}
+
+.barrage-sendbar {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(198, 198, 198, 0.73);
+
+    height: 60px;
+    padding: 0 12px 0 20px;
+   
+}
+
+.barrage-info{
+    display: flex;
+    width:50px;
+    margin-right: 10px;
+    align-items: center;
+
+}
+
+.barrage-root{
+    height:40px;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-box-align: center;
+    flex-grow: 1;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    position: relative;
+    
+}
+
+.barrage-switch{
+    position: relative;
+    width: 30px;
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input.barrage-checkbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.barrage-setting{
+    position: relative;
+    width:30px;
+    height: 35px;
+    background-color: chartreuse;
+    margin-right:10px;
+    display: flex;
+    align-items: center;
+}
+
+.barrage-setting-wrap{
+    display: inline-block;
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 4px 4px 0 0;
+    right: -150px;
+    z-index: 1001;
+    
+
+}
+
+.barrage-setting-wrap-area{
+    width:100%;
+    height:100%;
+    background-color: grey;
+    padding:12px 12px;
+    box-sizing: border-box;
+}
+
+.barrage-setting-wrap-area-fontsize{
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+
+.range-slider-handle {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    padding: 0px 0px 0 0px;
+    border-radius: 10px;
+    background-color: #b7b7b7;
+    z-index: 1002;
+}
+
+
+.range-slider-fill {
+    background-color: #00e100;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 30px;
+    z-index: 1003;
+}
+
+.barrage-inputbar{
+     
+    display:flex;
+    flex: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    height: 35px;
+    line-height: 30px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-items: center;
+    
+
+}
+
+.barrage-inputbar-wrap{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 200px;
+    padding: 0 5px;
+    height: 30px;
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+.barrage-input{
+    
+    width:100%;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    display: flex;
+    box-sizing: border-box;
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 0px;
+    outline: none;
+    
+
+}
+
+.barrage-inputbar-button{
+    width: 60px;
+    height: 35px;
+    border-radius: 0 4px 4px 0;
+    align-items: center;
+    background-color: #00a1d6;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.barrage-inputbar-button:active{
+    background-color: #428bca;
+}
