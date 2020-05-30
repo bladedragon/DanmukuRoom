@@ -33,9 +33,12 @@ var danmuData = [
         "color": "white",
         "speed": 16,
         "textSize": 20,
+        "sendTime": "2008-4-2 15:23:28",
         "road": 0,
         "starNum": 0,
-        "sendTime": "2008-4-2 15:23:28"
+        "location": null,
+        "userId": null
+        
     }
 ];
 
