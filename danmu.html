@@ -31,7 +31,7 @@
             </div>
             <div class="barrage-road">
 
-            </div>
+            </div> 
             <div class="barrage-road">
 
             </div>
@@ -54,26 +54,45 @@
                     </span>
                 </div>
                 <div class="barrage-setting" >
-                    <span class="bp-svgicon">
+                    <span class="bp-svgicon" onclick="clickSetting()">
                         <svg t="1590222271274" class="icon-setting" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1140" width="200" height="200"><path d="M589.312 498.176c0-34.816 22.016-64.512 52.736-76.288-7.168-28.672-18.432-55.808-33.28-80.896-30.208 13.312-66.56 7.68-91.136-16.896-24.576-24.576-30.208-60.928-16.896-91.136a340.611 340.611 0 0 0-80.896-33.28c-11.776 30.72-41.472 52.736-76.288 52.736-34.816 0-64.512-22.016-76.288-52.736-28.672 7.168-55.808 18.432-80.896 33.28 13.312 30.208 7.68 66.56-16.896 91.136s-60.928 30.208-91.136 16.896c-14.848 25.088-26.112 52.224-33.28 80.896 30.72 11.776 52.736 41.472 52.736 76.288 0 34.816-22.016 64.512-52.736 76.288 7.168 28.672 18.432 55.808 33.28 80.896 30.208-13.312 66.56-7.68 91.136 16.896 24.576 24.576 30.208 60.928 16.896 91.136 25.088 14.848 52.224 26.112 80.896 33.28 11.776-30.72 41.472-52.736 76.288-52.736 34.816 0 64.512 22.016 76.288 52.736 28.672-7.168 55.808-18.432 80.896-33.28-13.312-30.208-7.68-66.56 16.896-91.136 24.576-24.576 60.928-30.208 91.136-16.896 14.848-25.088 26.112-52.224 33.28-80.896-30.72-11.776-52.736-40.96-52.736-76.288z m-245.76 81.92c-45.056 0-81.92-36.864-81.92-81.92s36.864-81.92 81.92-81.92 81.92 36.864 81.92 81.92-36.864 81.92-81.92 81.92z m336.896-346.624h298.496v75.264H680.448z m0 303.104h298.496v75.264H680.448zM196.608 839.68h782.336v75.264H196.608z" p-id="1141" fill="#707070"></path></svg>
                     </span>
                     <div class="barrage-setting-wrap">
                         <div class="barrage-setting-wrap-area">
                             <div class="barrage-setting-wrap-area-fontsize">
+                                <div class="title"></div>
                                 <div class="range-slider fontsize">
                                     <div class="range-slider-handle"></div>
-                                    <div class="rnage-slider-fill"></div>
+                                    <div class="range-slider-fill"></div>
                                 </div>
                             </div>
                             <div class="barrage-setting-wrap-area-fontspeed">
-                                <div class="range-slider-fill speed"></div>
-                                <div class="range-slider-handle speed"></div>
+                                <!-- <div class="range-slider-fill speed"></div>
+                                <div class="range-slider-handle speed"></div> -->
                             </div>
                             <div class="barrage-setting-wrap-area-fontcolor">
                                 <div class="mode-selection-title"></div>
-                                <div class="mode-selection-row"></div>
+                                <div class="mode-selection-row">
+                                    <div class="color-picker"></div>
+                                    <ul class="color-picker-options">
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                        <li class="color-picker-option"></li>
+                                    </ul>
+                                </div>
                             </div>
-                            
+                                                                                                                                                                                                                                                                                                                                                        
                         </div>
                     </div>
                 </div>
@@ -86,6 +105,7 @@
             </div>
         </div>
     </div>
+    <!-- <input  type="color" id="onchange"> -->
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

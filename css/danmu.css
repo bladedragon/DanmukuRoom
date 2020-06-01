@@ -30,7 +30,7 @@ body, html {
 
 
 .barrage-content {
-    background-color: rgba(146, 251, 47, 0.11);
+    /* background-color: rgba(146, 251, 47, 0.11); */
     margin-top: 0;
     width: 100%;
     height: 90%;
@@ -145,13 +145,13 @@ input.barrage-checkbox{
 
 .barrage-setting:hover  .barrage-setting-wrap{
     /* opacity: 1; */
-    display: block;
-    transition: ease 1s;
+    /* display: block; */
+    transition: fill .5s ease;
 }
 
 .barrage-setting:hover .icon-setting path{
     transition: fill .5s ease;
-    fill: #00a1d6;
+    /* fill: #00a1d6; */
 }
 
 .bp-svgicon svg{
@@ -194,10 +194,12 @@ input.barrage-checkbox{
     height: 20px;
 }
 
-.range-slider-handle {
+.range-slider {
     position: relative;
-    width: 30%;
-    height: 30%;
+    display: flex;
+    vertical-align:center;
+    width: 100%;
+    height: 5px;
     padding: 0px 0px 0 0px;
     border-radius: 10px;
     background-color: #b7b7b7;
@@ -210,8 +212,17 @@ input.barrage-checkbox{
     position: absolute;
     top: 0;
     height: 100%;
+    width:10px;
     border-radius: 30px;
     z-index: 1003;
+}
+
+.range-slider-handle{
+    cursor: pointer;
+    width: calc(1.5vw);
+    height: calc(1.5vh);
+    border-radius: 50%;
+    background-color: white;    
 }
 
 .barrage-inputbar{
@@ -302,7 +313,7 @@ input.barrage-checkbox{
     align-items: center;
     position: absolute;
     
-    width: 50%;
+    width:50%;
     height: 70%;
     left: 100%;
     
